@@ -23,165 +23,77 @@
       padding: 10px;
       display: flex;
       justify-content: center;
+      gap: 20px;
       flex-wrap: wrap;
     }
 
     nav a {
       color: #333;
-      background-color: #d4f1f4;
-      margin: 5px;
-      padding: 10px 15px;
-      border-radius: 8px;
       text-decoration: none;
-      text-transform: uppercase;
       font-weight: bold;
-      transition: background 0.3s;
-    }
-
-    nav a:hover {
-      background-color: #bde0fe;
-    }
-
-    .section {
-      display: none;
-      padding: 30px 20px;
-      animation: fadeIn 0.3s ease-in-out;
-    }
-
-    .active {
-      display: block;
     }
 
     header {
       text-align: center;
-      background: var(--blue);
+      padding: 50px 20px;
+      background-color: var(--blue);
+    }
+
+    main {
       padding: 40px 20px;
     }
 
-    header img {
-      border-radius: 50%;
-      width: 130px;
-      height: 130px;
-      object-fit: cover;
-      border: 3px solid white;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    section {
+      margin-bottom: 40px;
+    }
+
+    h1, h2 {
+      margin: 0 0 15px;
     }
 
     footer {
       text-align: center;
       padding: 20px;
-      background: var(--green);
-      font-size: 0.9em;
-    }
-
-    .project-link, .social-link {
-      color: #0077b6;
-      text-decoration: none;
-    }
-
-    .marketing-image {
-      width: 200px;
-      border-radius: 10px;
-      margin: 10px 0;
-      display: block;
-    }
-
-    ul {
-      padding-left: 20px;
-    }
-
-    @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
-    }
-
-    @media (max-width: 600px) {
-      nav {
-        flex-direction: column;
-        align-items: center;
-      }
-
-      header img {
-        width: 100px;
-        height: 100px;
-      }
-
-      .marketing-image {
-        width: 100%;
-      }
+      background-color: var(--green);
     }
   </style>
 </head>
 <body>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
-<header>
-  <img src="your-photo.jpg" alt="Ibeth Vazquez">
-  <h1>Ibeth Vazquez</h1>
-  <p>Marketing-Minded. Tech-Savvy. Globally Inspired.</p>
-</header>
+  <header>
+    <h1>Ibeth Vazquez</h1>
+    <p>Future Business Leader & Creative Thinker</p>
+  </header>
 
-<nav>
-  <a href="#" onclick="showSection('about')">About Me</a>
-  <a href="#" onclick="showSection('marketing')">Marketing</a>
-  <a href="#" onclick="showSection('tech')">Technical</a>
-  <a href="#" onclick="showSection('contact')">Contact</a>
-</nav>
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>Hello! I'm Ibeth, a business and Chinese double major passionate about global marketing, finance, and cultural connection through language and design.</p>
+    </section>
 
-<div id="about" class="section active">
-  <h2>About Me</h2>
-  <p>Hi! I’m Ibeth, an international business major passionate about international communication, creativity, and tech. As a proud first-generation Latina, I love merging my cultural background with global ambition. I'm all about blending storytelling, strategy, and innovation to make meaningful impact in both marketing and tech spaces.</p>
-</div>
+    <section id="projects">
+      <h2>Projects</h2>
+      <ul>
+        <li>📊 Apple Financial Analysis Presentation</li>
+        <li>💡 Good Molecules Campus Campaign</li>
+        <li>🌍 Sun Tzu's Modern Strategy Presentation</li>
+      </ul>
+    </section>
 
-<div id="marketing" class="section">
-  <h2>Marketing Experience</h2>
-  <ul>
-    <li>
-      <strong>Good Molecules Brand Ambassador</strong>
-      <p>Created club presentations, giveaways, and campus outreach campaigns to promote Good Molecules. Collaborated with student orgs and led brand awareness efforts through social events and surveys.</p>
-      <img src="gm-promo.jpg" class="marketing-image" alt="Good Molecules Presentation">
-    </li>
-    <li>
-      <strong>Target + TikTok Mini Campaign</strong>
-      <p>Shot and edited a short 45-second campaign video highlighting a restock journey at Target, showing how skincare integrates with student life. Campaign targeted Gen Z viewers on TikTok.</p>
-      <img src="tiktok-video.jpg" class="marketing-image" alt="TikTok Screenshot">
-    </li>
-  </ul>
-</div>
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: ibeth@example.com</p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/your-profile" target="_blank">your-profile</a></p>
+    </section>
+  </main>
 
-<div id="tech" class="section">
-  <h2>Technical Projects</h2>
-  <ul>
-    <li>
-      <strong>Capital One Tech Internship</strong> – <a href="https://github.com/yourusername/project1" class="project-link">View Python Automation Tool</a>
-    </li>
-    <li>
-      <strong>Personal HTML Portfolio Site</strong> – <a href="https://github.com/yourusername/portfolio-site" class="project-link">View Source Code</a>
-    </li>
-    <li>
-      <strong>Apple Financial Analysis</strong> – <a href="https://github.com/yourusername/apple-financial-report" class="project-link">See Report</a>
-    </li>
-  </ul>
-</div>
-
-<div id="contact" class="section">
-  <h2>Contact Me</h2>
-  <p>Email: <a href="mailto:ibethvazquez@email.com" class="social-link">ibethvazquez@email.com</a></p>
-  <p>LinkedIn: <a href="https://www.linkedin.com/in/yourprofile" class="social-link" target="_blank">linkedin.com/in/yourprofile</a></p>
-  <p>GitHub: <a href="https://github.com/yourusername" class="social-link" target="_blank">github.com/yourusername</a></p>
-  <p>Location: Texas, USA — Open to relocation 🌎</p>
-</div>
-
-<footer>
-  <p>© 2025 Ibeth Vazquez. Built with love, code, and café de olla.</p>
-</footer>
-
-<script>
-  function showSection(id) {
-    const sections = document.querySelectorAll('.section');
-    sections.forEach(sec => sec.classList.remove('active'));
-    document.getElementById(id).classList.add('active');
-  }
-</script>
-
+  <footer>
+    <p>&copy; 2025 Ibeth Vazquez. All rights reserved.</p>
+  </footer>
 </body>
 </html>
