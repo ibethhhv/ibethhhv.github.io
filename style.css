@@ -1,1 +1,71 @@
-
+:root {
+    --bg-dark: #121212;
+    --bg-light: #ffffff;
+    --text-dark: #eaeaea;
+    --text-light: #222;
+    --accent: #ffb6c1;
+    --divider: #fff;
+  }
+  
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: var(--bg-dark);
+    color: var(--text-dark);
+    transition: all 0.3s ease;
+  }
+  
+  nav {
+    background-color: var(--accent);
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    gap: 20px;
+  }
+  
+  nav a {
+    color: var(--text-light);
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  header {
+    text-align: center;
+    padding: 2rem;
+    background-color: #1f1f1f;
+  }
+  
+  main {
+    padding: 2rem;
+  }
+  
+  section {
+    margin-bottom: 3rem;
+  }
+  
+  .divider {
+    border-bottom: 1px solid var(--divider);
+    margin: 2rem 0;
+  }
+  
+  .profile-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #1a1a1a;
+    color: var(--text-dark);
+  }
+  
+  .light-mode {
+    --bg-dark: #ffffff;
+    --text-dark: #222;
+    --accent: #cce5ff;
+    --divider: #ccc;
+  }
+  
